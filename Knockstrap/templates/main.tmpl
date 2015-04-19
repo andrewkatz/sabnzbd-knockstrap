@@ -57,22 +57,17 @@
 					<li><a href="#queue"><i class="icon-tasks"></i> $T('menu-queue')</a></li>
 					<li><a href="#history"><i class="icon-time"></i> $T('menu-history')</a></li>
 					<li><a href="#status"><i class="icon-info-sign"></i> $T('menu-cons')</a></li>
-					<li><a href="./config/"><i class="icon-cogs"></i> $T('menu-config')</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-question-sign"></i> Help <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="http://wiki.sabnzbd.org" target="_blank">$T('menu-wiki')</a></li>
-							<li><a href="http://forums.sabnzbd.org" target="_blank">$T('menu-forums')</a></li>
-							<li><a href="http://www.sabnzbd.org/live-chat" target="_blank">$T('menu-irc')</a></li>
-							<li class="divider"></li>
-							<li><a href="http://aforty.github.io/sabnzbd-knockstrap" target="_blank"><i class="icon-info-sign"></i> Knockstrap Project</a></li>
-							<li><a href="http://twitter.com/aforty" target="_blank"><i class="icon-twitter-sign"></i> @aforty</a></li>
-						</ul>
-					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a class="callout" href="#addNZB" data-toggle="modal"><i class="icon-white icon-plus"></i> Add NZB</a></li>
-					<li><a class="callout" href="#options" data-toggle="modal"><i class="icon-white icon-cog"></i> Options</a></li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-white icon-cog"></i> Options</a>
+						<ul class="dropdown-menu">
+							<li><a class="callout" href="#options" data-toggle="modal">UI Options</a></li>
+							<li><a href="./config/">SABNzbd Config</a></li>
+						</ul>
+					</li>
 					<li><a class="callout" href="#" data-bind="click: queue.toggleQueueState"><i data-bind="attr: { 'class': 'icon-white icon-' + (queue.isPaused() ? 'play' : 'pause') }"></i> <span data-bind="text: queue.isPaused() ? 'Resume' : 'Pause'"></span></a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-off icon-white"></i> <b class="caret"></b></a>
