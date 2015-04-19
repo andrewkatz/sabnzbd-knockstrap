@@ -80,7 +80,7 @@ select { height: 26px; font-size: 12px; width: auto; margin-bottom: 0; }
 /* Status */
 .status { margin-bottom: 20px; }
 .status .warnings { }
-.status .warnings .alert { padding: 3px 14px; margin-bottom: 5px; font-size: 11px; }
+.status .warnings .alert { padding: 3px 14px; margin-bottom: 5px; font-size: 12px; }
 .status .warnings .alert .row .timestamp { text-align: right; }
 
 /* Updater */

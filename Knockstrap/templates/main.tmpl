@@ -243,7 +243,7 @@
 			<p data-bind="visible: !isFirstLoad()">Your queue is empty.</p>
 		</div>
 		<nav data-bind="visible: hasMultiplePages">
-			<ul data-bind="foreach: pages" class="pagination">
+			<ul data-bind="foreach: pages" class="pagination pagination-sm">
 				<li data-bind="attr: { 'class': state }"><a href="#" data-bind="click: \$parent.selectPage, text: title"></a></li>
 			</ul>
 		</nav>
@@ -307,7 +307,7 @@
 			<p data-bind="visible: !isFirstLoad()">Your history is empty.</p>
 		</div>
 		<nav data-bind="visible: hasMultiplePages">
-			<ul data-bind="foreach: pages" class="pagination">
+			<ul data-bind="foreach: pages" class="pagination pagination-sm">
 				<li data-bind="attr: { 'class': state }"><a href="#" data-bind="click: \$parent.selectPage, text: title"></a></li>
 			</ul>
 		</nav>
@@ -317,13 +317,15 @@
 	<div id="status" class="status container" data-bind="with: status">
 		<div class="page-header">
 			<h2><i class="icon-info-sign"></i> Status</h2>
-			<h4 data-bind="toggle: { value: !isEmpty(), effect: 'fade' }"><a href="#" data-bind="click: clear">Clear</a></h4>
+			<h4 data-bind="toggle: { value: !isEmpty(), effect: 'fade' }" class="pull-right">
+				<a href="#" data-bind="click: clear" class="btn btn-default">Clear</a>
+			</h4>
 		</div>
 		<div class="warnings" data-bind="toggle: { value: !isEmpty(), effect: 'fade' }, template: { foreach: items, beforeRemove: hideItem, afterAdd: showItem }">
 			<div data-bind="attr: { 'class': 'alert alert-' + cssType() }">
 				<div class="row">
-				<div class="span9"><strong data-bind="text: type"></strong> <span data-bind="text: text"></span></div>
-				<div class="span2 pull-right timestamp"><span data-bind="text: date"></span></div>
+					<div class="col-md-9"><span class="label label-default" data-bind="text: type"></span> <span data-bind="text: text"></span></div>
+					<div class="col-md-2 pull-right timestamp"><span data-bind="text: date"></span></div>
 				</div>
 			</div>
 		</div>
