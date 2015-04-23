@@ -35,14 +35,14 @@ select { height: 26px; font-size: 12px; width: auto; margin-bottom: 0; }
 .wrapper .item .header .title { text-align: left; width: 95%; }
 .wrapper .item .header .title h3 {
 	display: inline-block;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
 	margin-top: 0;
 	font-size: 18px;
 	line-height: 22px;
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .wrapper .item .header .title h4 {
-	display: inline-block;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	margin-top: 0;
@@ -67,12 +67,12 @@ select { height: 26px; font-size: 12px; width: auto; margin-bottom: 0; }
 
 /* History */
 .history .wrapper .hero-unit.success { background-color: #DFF0D8; }
-.history .wrapper .hero-unit.error { color: #B94A48; }
+.history .wrapper .hero-unit.error { color: #d9534f; }
 .history .wrapper .item { }
 .history .wrapper .item .header .title { line-height: normal; }
 .history .wrapper .item .header .title h3 { margin: 0; font-size: 16px; line-height: 18px; }
 .history .wrapper .item .header .title h3 i { margin-right: 5px; }
-.history .wrapper .item .header .title h4 { margin: 0; font-size: 14px; line-height: 18px; font-weight: normal; }
+.history .wrapper .item .header .title h4 { margin: 0; font-size: 14px; line-height: 18px; font-weight: normal; margin-left: 25px; }
 .history .wrapper .details { margin-top: 10px; }
 .history .wrapper .row { font-size: 14px; line-height: 20px; }
 .history .wrapper .row .title { text-align: right; }
@@ -112,7 +112,7 @@ select { height: 26px; font-size: 12px; width: auto; margin-bottom: 0; }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-	body { padding-top: 40px; }
+	body { padding-top: 60px; }
 
 	.wrapper .item .header .title { width: 89%; }
 	.wrapper .item .header .title h3 { width: 100%; display: block; }
@@ -123,7 +123,7 @@ select { height: 26px; font-size: 12px; width: auto; margin-bottom: 0; }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-	body { padding: 40px 5px; }
+	body { padding: 60px 5px; }
 
 	.navbar { margin-left: -5px; margin-right: -5px; }
 
@@ -146,7 +146,7 @@ select { height: 26px; font-size: 12px; width: auto; margin-bottom: 0; }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-	body { padding: 40px 5px; }
+	body { padding: 60px 5px; }
 
 	.navbar { margin-left: -5px; margin-right: -5px; }
 
