@@ -1,4 +1,6 @@
 body {
+	background: #fff;
+	color: #222;
 	padding-top: 40px;
 	position: relative;
 }
@@ -19,7 +21,7 @@ select { height: 26px; font-size: 12px; width: auto; margin-bottom: 0; }
 
 .wrapper { display: inline-block; width: 100%; vertical-align: top; }
 .wrapper .item {
-	background-color: #485563;
+	background-color: #eee;
 	padding: 15px;
 	margin-bottom: 10px;
 	width: 100%;
@@ -81,8 +83,8 @@ select { height: 26px; font-size: 12px; width: auto; margin-bottom: 0; }
 /* Status */
 .status { margin-bottom: 20px; }
 .status .warnings { }
-.status .warnings .alert { padding: 3px 14px; margin-bottom: 5px; font-size: 12px; }
-.status .warnings .alert .row .timestamp { text-align: right; }
+.status .warnings .item { padding: 3px 14px; margin-bottom: 5px; font-size: 14px; background-color: #fafafa; }
+.status .warnings .item .row .timestamp { text-align: right; }
 
 /* Updater */
 .updater { margin-top: 20px; }
