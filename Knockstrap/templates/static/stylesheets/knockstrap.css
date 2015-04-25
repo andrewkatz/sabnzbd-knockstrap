@@ -71,9 +71,10 @@ select { height: 26px; font-size: 12px; width: auto; margin-bottom: 0; }
 .history .wrapper .item { }
 .history .wrapper .item .header .title { line-height: normal; }
 .history .wrapper .item .header .title h3 { margin: 0; font-size: 16px; line-height: 18px; }
-.history .wrapper .item .header .title h3 i { margin-right: 5px; }
-.history .wrapper .item .header .title h4 { margin: 0; font-size: 14px; line-height: 18px; font-weight: normal; margin-left: 25px; }
-.history .wrapper .details { margin-top: 10px; }
+.history .wrapper .item .header .title h3.icon { position: absolute; top: 10px; }
+.history .wrapper .item .header .title h3.name { margin-left: 30px; padding-right: 35px; }
+.history .wrapper .item .header .title h4 { margin: 0; font-size: 14px; line-height: 18px; font-weight: normal; margin-left: 30px; }
+.history .wrapper .details { margin-top: 10px; padding: 15px 30px; background: #4e5d6c; }
 .history .wrapper .row { font-size: 14px; line-height: 20px; }
 .history .wrapper .row .title { text-align: right; }
 .history .wrapper .row .value { font-weight: bold; word-wrap: break-word; overflow-wrap: break-word; }
