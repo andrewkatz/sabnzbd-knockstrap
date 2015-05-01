@@ -1,11 +1,9 @@
-body {
-	padding-top: 40px;
-	position: relative;
-}
+body { padding-top: 40px; position: relative; }
 
-.navbar .navbar-brand img {
-	height: 25px;
-}
+.navbar .navbar-brand img { height: 25px; }
+.navbar { box-shadow: 0 1px 1px rgba(0,0,0,0.15); }
+
+.btn { box-shadow: 0 1px 1px rgba(0,0,0,0.15); }
 
 .table { font-size: 10px; }
 select { height: 26px; font-size: 12px; width: auto; margin-bottom: 0; }
@@ -19,36 +17,36 @@ select { height: 26px; font-size: 12px; width: auto; margin-bottom: 0; }
 
 .wrapper { display: inline-block; width: 100%; vertical-align: top; }
 .wrapper .item {
-	background-color: #485563;
-	padding: 15px;
-	margin-bottom: 10px;
-	width: 100%;
-	text-align: left;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	box-sizing: border-box;
-	box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+  background-color: #485563;
+  padding: 15px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.15);
 }
 .wrapper .item > div { clear: left; }
 .wrapper .item .header { position: relative; }
 .wrapper .item .header .title { text-align: left; width: 95%; }
 .wrapper .item .header .title h3 {
-	display: inline-block;
-	margin-top: 0;
-	font-size: 18px;
-	line-height: 22px;
-	overflow: hidden;
+  display: inline-block;
+  margin-top: 0;
+  font-size: 18px;
+  line-height: 22px;
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 .wrapper .item .header .title h4 {
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-	margin-top: 0;
-	font-size: 14px;
-	line-height: 22px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 22px;
 }
 .wrapper .item .header .tools { position: absolute; right: 0; top: 0; text-align: right; font-size: 12px; line-height: 14px; }
 .wrapper .item .header .tools i { font-size: 12px; }
@@ -75,7 +73,7 @@ select { height: 26px; font-size: 12px; width: auto; margin-bottom: 0; }
 .history .wrapper .item .header .title h3.icon { position: absolute; top: 10px; }
 .history .wrapper .item .header .title h3.name { margin-left: 30px; padding-right: 35px; }
 .history .wrapper .item .header .title h4 { margin: 0; font-size: 14px; line-height: 18px; font-weight: normal; margin-left: 30px; }
-.history .wrapper .details { margin-top: 10px; padding: 15px 30px; background: #4e5d6c; }
+.history .wrapper .details { margin-top: 15px; padding: 15px 30px; background: #4e5d6c; box-shadow: 0 1px 1px rgba(0,0,0,0.15); }
 .history .wrapper .row { font-size: 14px; line-height: 20px; }
 .history .wrapper .row .title { text-align: right; }
 .history .wrapper .row .value { font-weight: bold; word-wrap: break-word; overflow-wrap: break-word; }
@@ -100,68 +98,68 @@ select { height: 26px; font-size: 12px; width: auto; margin-bottom: 0; }
 
 /* Large desktop */
 @media (min-width: 1200px) {
-	.wrapper .item .header .title { width: 92%; }
+  .wrapper .item .header .title { width: 92%; }
 
   .queue .wrapper .item .header .title input { height: 22px; padding-top: 3px; }
 }
 
 /* Small desktop */
 @media (min-width: 980px) and (max-width: 1199px) {
-	.wrapper .item .header .title { width: 90%; }
+  .wrapper .item .header .title { width: 90%; }
 
   .queue .wrapper .item .header .title input { height: 22px; }
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-	body { padding-top: 60px; }
+  body { padding-top: 60px; }
 
-	.wrapper .item .header .title { width: 89%; }
-	.wrapper .item .header .title h3 { width: 100%; display: block; }
-	.wrapper .item .header .title h4 { width: 100%; }
+  .wrapper .item .header .title { width: 89%; }
+  .wrapper .item .header .title h3 { width: 100%; display: block; }
+  .wrapper .item .header .title h4 { width: 100%; }
 
   .queue .wrapper .item .header .title input { height: 22px; }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-	body { padding: 60px 5px; }
+  body { padding: 60px 5px; }
 
-	.navbar { margin-left: -5px; margin-right: -5px; }
+  .navbar { margin-left: -5px; margin-right: -5px; }
 
-	.page-header { margin-top: 15px; padding-bottom: 3px; }
-	.page-header h2 { font-size: 24px; line-height: 28px; }
-	.page-header h4 { font-size: 16px; line-height: 24px; }
+  .page-header { margin-top: 15px; padding-bottom: 3px; }
+  .page-header h2 { font-size: 24px; line-height: 28px; }
+  .page-header h4 { font-size: 16px; line-height: 24px; }
 
-	.wrapper .item .header .title { width: 85%; }
-	.wrapper .item .header .title h3 { font-size: 14px; line-height: 20px; width: 100%; display: block; }
-	.wrapper .item .header .title h4 { width: 100%; }
-	.wrapper .item .info { font-size: 14px; line-height: 18px; margin-bottom: 5px; }
+  .wrapper .item .header .title { width: 85%; }
+  .wrapper .item .header .title h3 { font-size: 14px; line-height: 20px; width: 100%; display: block; }
+  .wrapper .item .header .title h4 { width: 100%; }
+  .wrapper .item .info { font-size: 14px; line-height: 18px; margin-bottom: 5px; }
 
   .queue .wrapper .item .header .title input { font-size: 14px; line-height: 20px; margin-top: -2px; }
 
-	.history .wrapper .row { font-size: 12px; line-height: 14px; }
-	.history .wrapper .row .title { text-align: left; }
+  .history .wrapper .row { font-size: 12px; line-height: 14px; }
+  .history .wrapper .row .title { text-align: left; }
 
-	.navbar-fixed-top { margin-left: -5px; margin-right: -5px; }
+  .navbar-fixed-top { margin-left: -5px; margin-right: -5px; }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-	body { padding: 60px 5px; }
+  body { padding: 60px 5px; }
 
-	.navbar { margin-left: -5px; margin-right: -5px; }
+  .navbar { margin-left: -5px; margin-right: -5px; }
 
-	.page-header { margin-top: 15px; padding-bottom: 3px; }
-	.page-header h2 { font-size: 20px; line-height: 24px; }
-	.page-header h4 { font-size: 14px; line-height: 18px; }
+  .page-header { margin-top: 15px; padding-bottom: 3px; }
+  .page-header h2 { font-size: 20px; line-height: 24px; }
+  .page-header h4 { font-size: 14px; line-height: 18px; }
 
-	/* .wrapper .item { min-height: 100px; } */
-	.wrapper .item .header .title { width: 80%; }
-	.wrapper .item .header .title h3 { font-size: 14px; line-height: 20px; width: 100%; display: block; }
-	.wrapper .item .header .title h4 { width: 100%; line-height: 18px; }
-	.wrapper .item .info { font-size: 14px; line-height: 18px; margin-bottom: 5px; }
+  /* .wrapper .item { min-height: 100px; } */
+  .wrapper .item .header .title { width: 80%; }
+  .wrapper .item .header .title h3 { font-size: 14px; line-height: 20px; width: 100%; display: block; }
+  .wrapper .item .header .title h4 { width: 100%; line-height: 18px; }
+  .wrapper .item .info { font-size: 14px; line-height: 18px; margin-bottom: 5px; }
 
-	.history .wrapper .row { font-size: 12px; line-height: 14px; }
-	.history .wrapper .row .title { text-align: left; }
+  .history .wrapper .row { font-size: 12px; line-height: 14px; }
+  .history .wrapper .row .title { text-align: left; }
 }
