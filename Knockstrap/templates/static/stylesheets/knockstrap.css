@@ -1,9 +1,45 @@
-body { padding-top: 40px; position: relative; }
+body { background-color: #222; padding-top: 40px; position: relative; }
 
 .navbar .navbar-brand img { height: 25px; }
 .navbar { box-shadow: 0 1px 1px rgba(0,0,0,0.15); }
+.navbar-default { background-color: #333; }
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  background-color: #454545;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: #454545;
+}
+.dropdown-menu { background-color: #333; }
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus { background-color: #454545; }
 
 .btn { box-shadow: 0 1px 1px rgba(0,0,0,0.15); }
+.btn-default { background: #333; }
+.btn-default:hover, .btn-default:focus, .btn-default:active { background: #454545; }
+
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+  background-color: #333;
+  color: #555;
+}
+.pagination > li > a,
+.pagination > li > span {
+  background-color: #333;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover {
+  background-color: #454545;
+}
+
+.modal-header, .modal-footer { background-color: #333; }
+.modal-content { background-color: #222; }
+
+.input-group-addon { background-color: #333; }
 
 .table { font-size: 10px; }
 select { height: 26px; font-size: 12px; width: auto; margin-bottom: 0; }
@@ -17,7 +53,7 @@ select { height: 26px; font-size: 12px; width: auto; margin-bottom: 0; }
 
 .wrapper { display: inline-block; width: 100%; vertical-align: top; }
 .wrapper .item {
-  background-color: #485563;
+  background-color: #333;
   padding: 15px;
   margin-bottom: 10px;
   width: 100%;
@@ -73,7 +109,7 @@ select { height: 26px; font-size: 12px; width: auto; margin-bottom: 0; }
 .history .wrapper .item .header .title h3.icon { position: absolute; top: 10px; }
 .history .wrapper .item .header .title h3.name { margin-left: 30px; padding-right: 35px; }
 .history .wrapper .item .header .title h4 { margin: 0; font-size: 14px; line-height: 18px; font-weight: normal; margin-left: 30px; }
-.history .wrapper .details { margin-top: 15px; padding: 15px 30px; background: #4e5d6c; box-shadow: 0 1px 1px rgba(0,0,0,0.15); }
+.history .wrapper .details { margin-top: 15px; padding: 15px 30px; background: #454545; box-shadow: 0 1px 1px rgba(0,0,0,0.15); }
 .history .wrapper .row { font-size: 14px; line-height: 20px; }
 .history .wrapper .row .title { text-align: right; }
 .history .wrapper .row .value { font-weight: bold; word-wrap: break-word; overflow-wrap: break-word; }
