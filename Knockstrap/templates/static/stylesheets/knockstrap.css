@@ -36,6 +36,8 @@ body { background-color: #222; padding-top: 40px; position: relative; }
   background-color: #454545;
 }
 
+.progress { background-color: #454545; }
+
 .modal-header, .modal-footer { background-color: #333; }
 .modal-content { background-color: #222; }
 
